@@ -20,7 +20,8 @@ const API = {
     });
 
     const json = await res.json();
-
+      console.log("put json: "+json)
+      console.log("put res.json: "+res.json)
     return json;
   },
   async createWorkout(data = {}) {
@@ -31,7 +32,8 @@ const API = {
     });
 
     const json = await res.json();
-
+      console.log("post json: "+json)
+      console.log("post res.json: "+res.json)
     return json;
   },
 
