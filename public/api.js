@@ -30,9 +30,9 @@ const API = {
       headers: { "Content-Type": "application/json" }
     });
 
-    // const json = await res.json();
+    const json = await res.json();
 
-    return res.json();
+    return json;
   },
 
   async getWorkoutsInRange() {
