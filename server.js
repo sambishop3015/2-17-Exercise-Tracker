@@ -11,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+mongodb+srv://sambishop3015:Owen.Bishop1@testcluster.dckcn.mongodb.net/workout?retryWrites=true&w=majority
+// OVKWWi5QMgSZOSH9
+
 //DB Connection
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/workout", 
