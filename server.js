@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongodb+srv://sambishop3015:OVKWWi5QMgSZOSH9@testcluster.dckcn.mongodb.net/workout?retryWrites=true&w=majority
+// mongodb+srv://sambishop3015:OVKWWi5QMgSZOSH9@testcluster.dckcn.mongodb.net/workout?retryWrites=true&w=majority
 // OVKWWi5QMgSZOSH9
 
 //DB Connection
