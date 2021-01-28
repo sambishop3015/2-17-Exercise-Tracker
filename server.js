@@ -1,18 +1,16 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const logger = require("morgan");
+require("dotenv").config();
 
 //Porting
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
-
-// mongodb+srv://sambishop3015:OVKWWi5QMgSZOSH9@testcluster.dckcn.mongodb.net/workout?retryWrites=true&w=majority
-// OVKWWi5QMgSZOSH9
 
 //DB Connection
 mongoose.connect(
